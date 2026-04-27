@@ -11,12 +11,17 @@ public class MyAnotherThread  extends Thread{
             }
         }
     }
-    static void main(String[] args) {
+    static void main(String[] args) throws InterruptedException {
 //        Multi threading
          MyAnotherThread t2 = new MyAnotherThread();
          MyThread thread = new MyThread();
          Thread t1 = new Thread(thread);
+        System.out.println(t1.getState());
          t2.start();
+        System.out.println(t1.getState());
          t1.start();
+
+         t1.join();//main method will wait for t1 to get finish.
+        System.out.println(t1.getState());
     }
 }
