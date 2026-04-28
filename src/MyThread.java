@@ -13,7 +13,7 @@ public class MyThread implements Runnable{
     }
 
     static void main(String[] args) {
-//        create object of myThread class
+//        create object of myThread class ( this is also a user thread , the thread who do our work)
         MyThread t1 = new MyThread();
 
         Thread thread = new Thread(t1);
