@@ -1,5 +1,7 @@
+package ThreadMethods;
+
 public class ThreadMethods extends Thread {
-    //java methods:- run(), start(), sleep(), join(),
+    //java methods:- run(), start(), sleep(), join(), setPriority(),
     public void run(){
         System.out.println("Thread is running....");
         for (int i=1; i<=5; i++){

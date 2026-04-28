@@ -1,4 +1,3 @@
-
 public class MyAnotherThread  extends Thread{
     public void run(){
 //        reverse numbers
